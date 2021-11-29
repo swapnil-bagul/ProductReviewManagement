@@ -10,6 +10,6 @@ namespace ProductReviewManagement
         public int UserId { get; set; }
         public float Rating { get; set; }
         public string Review { get; set; }
-        public bool IsLike { get; set; }
+        public bool isLike { get; set; }
     }
 }
