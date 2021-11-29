@@ -38,7 +38,9 @@ namespace ProductReviewManagement
 
             };
             ProductManagement productManagement = new ProductManagement();
-            productManagement.TopRecords(productReviewList);
+            //productManagement.TopRecords(productReviewList);
+            productManagement.SelectedRecords(productReviewList);
+            productManagement.countOfReviews(productReviewList);
 
 
         }
