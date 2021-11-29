@@ -66,6 +66,18 @@ namespace ProductReviewManagement
                 Console.WriteLine("UserId:-" + list.userId + " Count:-" + list.count);
             }
         }
+        /// <summary>
+        /// Retrieves the product id and review UC5
+        /// </summary>
+        /// <param name="productReviewList">The product review list.</param>
+        public void retrieveProductIDandreview(List<ProductReview> productReviewList)
+        {
+            var recordData = productReviewList.Select(r => new { r.ProductId, r.Review });
+            foreach (var list in recordData)
+            {
+                Console.WriteLine("product Id:-" + list.ProductId + " Review :-" + list.Review);
+            }
+        }
 
     }
 }
